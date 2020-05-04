@@ -44,3 +44,7 @@ $di['db'] = function () use ($config) {
 $di['core_article_manager'] = function () {
     return new App\Core\Managers\ArticleManager();
 };
+
+$di['core_user_manager'] = function () {
+    return new \App\Core\Managers\UserManager();
+};
